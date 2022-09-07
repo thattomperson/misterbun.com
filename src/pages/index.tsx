@@ -23,7 +23,7 @@ const Home: NextPage = () => {
                 height="700"
               />
               <div
-                className="items-center absolute top-16 left-0  hidden md:flex"
+                className="items-center absolute top-16 left-2 md:left-0 flex"
                 style={{ transform: 'rotate(10deg)' }}
               >
                 <p>That&apos;s me!</p>
@@ -61,12 +61,11 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div
-            className="items-center absolute hidden lg:flex"
-            style={{ left: '300px', top: '174px', transform: 'rotate(10deg)' }}
+            className="items-center absolute flex right-0 top-[350px] lg:top-[174px] lg:left-[300px]"
+            style={{ transform: 'rotate(10deg)' }}
           >
             <svg
-              className="ml-3 -scale-x-1 -rotate-45 transform relative"
-              style={{ top: '30px' }}
+              className="ml-3 -scale-x-1 lg:-rotate-45 -scale-y-100 lg:scale-y-100 lg:top-[30px] transform relative"
               xmlns="http://www.w3.org/2000/svg"
               height="10"
               width="70"
