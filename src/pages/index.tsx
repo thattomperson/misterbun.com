@@ -2,7 +2,6 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 const Home: NextPage = () => {
-  // @click="$refs['ouch' + Math.floor((Math.random() * 7) + 1)].play();"
   return (
     <>
       <Head>
@@ -11,14 +10,17 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="bg-deep-blue h-screen font-flower">
-        <div className="max-w-6xl mx-auto md:pt-24 min-h-800 antialiased relative text-aqua font-hand">
+      <div className="bg-deep-blue min-h-screen font-flower antialiased">
+        <div className="max-w-6xl mx-auto">
+          <img src="/logo.png" className="clicky" width="400" />
+        </div>
+
+        <div className="max-w-6xl mx-auto md:pt-24 min-h-800 relative text-aqua font-hand">
           <div className="flex flex-col md:flex-row items-center">
             <div className="relative">
               <img
                 src="/retro-bun.png"
                 className="clicky"
-                alt="Jack McDade's Giant Head"
                 width="700"
                 height="700"
               />
@@ -90,7 +92,11 @@ const Home: NextPage = () => {
           </div>
           <div
             className="items-center absolute hidden lg:flex"
-            style={{ left: '200px', top: '500px', transform: 'rotate(-6deg)' }}
+            style={{
+              left: '200px',
+              top: '500px',
+              transform: 'rotate(-6deg)',
+            }}
           >
             <svg
               className="ml-3 -scale-x-1 -scale-y-1 rotate-45 transform relative"
