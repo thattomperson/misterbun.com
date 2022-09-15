@@ -10,12 +10,20 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="bg-deep-blue min-h-screen font-flower antialiased">
-        <div className="max-w-6xl mx-auto">
+      <div className="scroll-smooth bg-deep-blue min-h-screen font-flower antialiased">
+        <div className="max-w-6xl mx-auto flex justify-center flex-col items-center md:flex-row md:justify-between">
           <img src="/logo.png" className="clicky" width="400" />
+
+          <nav className="flex justify-center md:mr-10">
+            <a className="inline-block group" href="#photos">
+              <span className="text-yellow font-bold inline-block underline group-hover:rotate-6">
+                TAKE ME TO THE PHOTOS!
+              </span>
+            </a>
+          </nav>
         </div>
 
-        <div className="max-w-6xl mx-auto md:pt-24 min-h-800 relative text-aqua font-hand">
+        <div className="max-w-6xl mx-auto py-10 lg:pt-24 min-h-800 relative text-aqua font-hand">
           <div className="flex flex-col md:flex-row items-center">
             <div className="relative">
               <img
@@ -25,7 +33,7 @@ const Home: NextPage = () => {
                 height="700"
               />
               <div
-                className="items-center absolute top-16 left-2 md:left-0 flex"
+                className="items-center absolute hidden top-16 md:left-0 md:flex"
                 style={{ transform: 'rotate(10deg)' }}
               >
                 <p>That&apos;s me!</p>
@@ -63,7 +71,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div
-            className="items-center absolute flex right-0 top-[350px] lg:top-[174px] lg:left-[300px]"
+            className="items-center absolute hidden lg:flex top-[174px] left-[300px]"
             style={{ transform: 'rotate(10deg)' }}
           >
             <svg
