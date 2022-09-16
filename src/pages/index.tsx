@@ -15,7 +15,7 @@ const Home: NextPage = () => {
           <img src="/logo.png" className="clicky" width="400" />
 
           <nav className="flex justify-center md:mr-10">
-            <a className="inline-block group" href="#photos">
+            <a className="inline-block group" href="https://www.instagram.com/mrbunandangel/">
               <span className="text-yellow font-bold inline-block underline group-hover:rotate-6">
                 TAKE ME TO THE PHOTOS!
               </span>
